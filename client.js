@@ -41,3 +41,38 @@ const employees = [
 // Ask questions when you don't.
 
 console.log( employees );
+
+function employeeDefine(nameIn, percent, comp, bonus){
+  let employeeObj = {
+    name: nameIn,
+    bonusPercentage: percent,
+    totalCompensation: comp,
+    totalBonus: bonus
+  }
+}
+
+function employeeLoop(inputArray){
+
+for (let i = 0; i < inputArray.length; i++) {
+  const employee = inputArray[i];
+  let bonusPercentage = 0;
+  if(employee.reviewRating <= 2){
+    bonusPercentage = 0;
+  }
+  else if (employee.reviewRating === 3) {
+    bonusPercentage = 0.04;
+  }
+  else if (employee.reviewRating === 4) {
+     bonusPercentage = 0.06;
+  }
+  else if (employee.reviewRating ===5) {
+      bonusPercentage = 0.1;
+  }
+  else{
+     
+  }
+  console.log( employee , bonusPercentage );
+  }
+
+}
+employeeLoop(employees);
