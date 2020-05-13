@@ -106,6 +106,7 @@ function employeeLoop(employee) {
   }
   console.log(employee, bonusPercentage);
   console.log(employeeObj);
+  return employeeObj;
 }
 
 console.log(employeeLoop(employees[0]));
